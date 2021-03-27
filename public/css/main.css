@@ -1,0 +1,188 @@
+
+html, body {
+  background-color: #fff;
+  color: #696969;
+}
+#wrapper {
+    overflow-x: hidden;
+}
+#sidebar-wrapper {
+  min-height: 100vh;
+  margin-left: -15rem;
+  -webkit-transition: margin .25s ease-out;
+  -moz-transition: margin .25s ease-out;
+  -o-transition: margin .25s ease-out;
+  transition: margin .25s ease-out;
+}
+#sidebar-wrapper .sidebar-heading {
+  padding: 0.875rem 1.25rem;
+  font-size: 1.2rem;
+}
+#sidebar-wrapper .list-group {
+  width: 15rem;
+}
+#page-content-wrapper {
+  min-width: 100vw;
+}
+#wrapper.toggled #sidebar-wrapper {
+  margin-left: 0;
+}
+
+@media (min-width: 768px) {
+  #sidebar-wrapper {
+    margin-left: 0;
+  }
+
+  #page-content-wrapper {
+    min-width: 0;
+    width: 100%;
+  }
+
+  #wrapper.toggled #sidebar-wrapper {
+    margin-left: -15rem;
+  }
+}
+.navbar-nav {
+  list-style: none;
+}
+.sidebar {
+  background-color: #fff;
+}
+.sidebar .nav-item {
+    position: relative;
+}
+
+.sidebar .nav-item .nav-link {
+  color: #696969;
+}
+.sidebar .nav-item .nav-link {
+    display: block;
+    width: 100%;
+    text-align: left;
+    padding: 1rem;
+    width: 14rem;
+}
+.sidebar .nav-item .nav-link, .topbar .nav-item .nav-link {
+    position: relative;
+}
+.sidebar .nav-item .nav-link:active, .sidebar.nav-item .nav-link:focus, .sidebar .nav-item .nav-link:hover {
+  background-color: #eaecf4;
+}
+.sidebar .nav-item .nav-link span {
+    font-size: .85rem;
+    display: inline;
+}
+.sidebar .nav-item .collapse {
+  position:relative;
+  left:0;
+  z-index:1;
+  top:0;
+  -webkit-animation:none;
+  animation:none
+ }
+ .sidebar .nav-item .collapse .collapse-inner {
+  border-radius:0;
+  box-shadow:none
+ }
+ .sidebar .nav-item .collapsing {
+  display:block;
+  transition:height .15s ease
+ }
+ .sidebar .nav-item .collapse,
+ .sidebar .nav-item .collapsing {
+  margin:0 1rem;
+ }
+ .sidebar .nav-item .nav-link {
+  display:block;
+  width:100%;
+  text-align:left;
+  padding:1rem;
+  width:14rem
+ }
+ .sidebar .nav-item .nav-link i {
+  font-size:.85rem;
+  margin-right:.25rem;
+ }
+ .sidebar .nav-item .nav-link span {
+  font-size:.85rem;
+  display:inline
+ }
+ sidebar .nav-item .collapse .collapse-inner,
+.sidebar .nav-item .collapsing .collapse-inner {
+ padding:.5rem 0;
+ min-width:10rem;
+ font-size:.85rem;
+ margin:0 0 1rem 0
+}
+.sidebar .nav-item .collapse .collapse-inner .collapse-header,
+.sidebar .nav-item .collapsing .collapse-inner .collapse-header {
+ margin:0;
+ white-space:nowrap;
+ padding:.5rem 1.5rem;
+ text-transform:uppercase;
+ font-weight:800;
+ font-size:.65rem;
+ color:#b7b9cc
+}
+.sidebar .nav-item .collapse .collapse-inner .collapse-item,
+.sidebar .nav-item .collapsing .collapse-inner .collapse-item {
+ padding:.5rem 1rem;
+ margin:0 .5rem;
+ display:block;
+ color:#3a3b45;
+ text-decoration:none;
+ border-radius:.35rem;
+ white-space:nowrap
+}
+.sidebar .nav-item .collapse .collapse-inner .collapse-item:hover,
+.sidebar .nav-item .collapsing .collapse-inner .collapse-item:hover {
+ background-color:#eaecf4
+}
+.sidebar .nav-item .collapse .collapse-inner .collapse-item:active,
+.sidebar .nav-item .collapsing .collapse-inner .collapse-item:active {
+ background-color:#dddfeb
+}
+.sidebar .nav-item .collapse .collapse-inner .collapse-item.active,
+.sidebar .nav-item .collapsing .collapse-inner .collapse-item.active {
+ color:#4e73df;
+ font-weight:700
+}
+.sidebar .nav-item .nav-link[data-toggle="collapse"]::after {
+    width: 1rem;
+    text-align: center;
+    float: right;
+    vertical-align: 0;
+    border: 0;
+    font-weight: 900;
+    content: '\f107';
+    font-family: 'FontAwesome';
+}
+
+ .sidebar .nav-item .nav-link[data-toggle=collapse].collapsed::after {
+    content:'\f105'
+ }
+
+.sidebar #sidebarToggle {
+ width:2.5rem;
+ height:2.5rem;
+ text-align:center;
+ margin-bottom:1rem;
+ cursor:pointer
+}
+.sidebar #sidebarToggle::after {
+ font-weight:900;
+ content:'\f104';
+ font-family:'Font Awesome 5 Free';
+ margin-right:.1rem
+}
+.sidebar #sidebarToggle:hover {
+ text-decoration:none
+}
+.sidebar #sidebarToggle:focus {
+ outline:0
+}
+.sidebar.toggled {
+ width:0!important;
+ overflow:hidden
+}
+

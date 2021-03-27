@@ -1,0 +1,27 @@
+<?php
+
+use Illuminate\Database\Seeder;
+
+use App\Role;
+
+class RoleSeeder extends Seeder{
+
+
+    public function run(){
+        Role::create([
+            'name' => 'admin'
+        ]);
+
+        Role::create([
+            'name' => 'user'
+        ]);
+
+        Role::create([
+            'name' => 'moderator'
+        ]);
+
+        Role::create([
+            'name' => 'edtor'
+        ]);
+    }
+}
